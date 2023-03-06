@@ -1,0 +1,220 @@
+.container {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 2.5rem;
+  position: relative;
+  font-family: "Montserrat";
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.heading {
+  position: relative;
+}
+
+.heading::after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 3px;
+  bottom: -10px;
+  background: #eeff20;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.content {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 102%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: white;
+  z-index: 0;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.card {
+  position: relative;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.cards > div:nth-child(odd) {
+  background: #2b9348;
+  transform: translate(-58%, 0);
+  text-align: end;
+  border-radius: 10px 40px 0px 50px;
+  box-shadow: #eeef20 3px 3px 0px 0px;
+  padding-right: 2rem;
+}
+
+.cards > div:nth-child(odd)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 108%;
+  width: 9%;
+  height: 3px;
+  transform: translate(100%, -50%) rotate(20deg);
+  background: #eeef20;
+}
+
+.cards > div:nth-child(odd)::before {
+  content: "";
+  position: absolute;
+  right: -8.2%;
+  top: 115%;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  transform: translate(52%, -50%);
+  background: white;
+  z-index: 1;
+  border: 5px solid #2b9348;
+}
+
+.cards > div:nth-child(even) {
+  background: #2b9348;
+  transform: translate(58%, 0);
+  border-radius: 40px 10px 50px 0;
+  box-shadow: #eeef20 -3px 3px 0px 0px;
+  padding-left: 2rem;
+}
+
+.cards > div:nth-child(even)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 105%;
+  width: 8%;
+  height: 3px;
+  transform: translate(-100%, 0) rotate(-20deg);
+  background: #eeef20;
+}
+
+.cards > div:nth-child(even)::before {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -8.2%;
+  top: 115%;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  transform: translate(-52%, -50%);
+  background: white;
+  z-index: 1000;
+  border: 5px solid #2b9348;
+}
+
+.card > h3 {
+  font-family: "Montserrat";
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.over::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "✓" !important;
+  color: #2b9348;
+  font-size: 15px;
+  border: 3px solid #2b9348 !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    max-width: 350px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    min-width: 250px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .container {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 0;
+  }
+  .timeline {
+    transform: translate(-53%, 0);
+  }
+  .heading {
+    font-size: 28px;
+    position: relative;
+    font-family: "Montserrat";
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .cards {
+    gap: 3rem;
+    width: 100%;
+  }
+  .card {
+    min-width: 300px;
+  }
+  .cards > div:nth-child(odd) {
+    transform: translate(58%, 0);
+    border-radius: 40px 10px 50px 0;
+    padding-left: 2rem;
+    text-align: start;
+    box-shadow: #eeef20 -3px 3px 0px 0px;
+  }
+  .cards > div:nth-child(odd)::after {
+    left: 0;
+    top: 105%;
+    width: 8%;
+    transform: translate(-100%, 0) rotate(-20deg);
+  }
+  .cards > div:nth-child(odd)::before {
+    left: -8.2%;
+    top: 115%;
+    transform: translate(-52%, -50%);
+  }
+  .card > h3 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .card {
+    min-width: 0;
+  }
+}

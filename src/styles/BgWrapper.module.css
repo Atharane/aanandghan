@@ -1,0 +1,97 @@
+.bg-wrapper {
+  width: 100vw;
+  background: linear-gradient(#0c1618, #333940);
+  background: #0c1618;
+  color: #ffffff;
+  z-index: -10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.star-image-container {
+  transform: scale(1.2);
+  position: relative;
+  width: 100%;
+  height: 100vw;
+}
+
+.stars-wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 0;
+}
+
+.stars {
+  animation: rotateStars 100s linear 0s infinite;
+}
+
+@keyframes rotateStars {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-359deg);
+  }
+}
+
+.content-wrapper {
+  width: 100vw;
+  z-index: 100;
+  scrollbar-width: none;
+}
+
+.content-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.earth-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 0vh;
+  width: 100vw;
+  z-index: 1000;
+  transform: translate(0, -42vh);
+}
+
+.earth {
+  animation: rotateEarth 30s linear 0s infinite;
+}
+
+@keyframes rotateEarth {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .earth-wrapper {
+    transform: translate(0, -20vh);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .star-image-container {
+    height: 100vh;
+    width: 100vh;
+  }
+
+  .earth-wrapper {
+    transform: translate(0, -13vh);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .earth-wrapper {
+    transform: translate(0, -7vh);
+  }
+}
