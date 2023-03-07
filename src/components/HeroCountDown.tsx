@@ -21,7 +21,7 @@ const renderer = ({
   if (completed) {
     return (
       <div className={styles["live-heading"]}>
-        <h2>अठ्ठावीस मार्च, २०२३</h2>
+        <h1>अठ्ठावीस मार्च, २०२३</h1>
       </div>
     );
   } else {
@@ -33,7 +33,7 @@ const renderer = ({
     return (
       <>
         <div className={styles["live-heading"]}>
-          <h2>अठ्ठावीस मार्च, २०२३</h2>
+          <h2>२८ मार्च, २०२३</h2>
         </div>
         <div className={styles["countdown"]}>
           <div className={styles["days"]}>

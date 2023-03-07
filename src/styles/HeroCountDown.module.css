@@ -45,10 +45,14 @@ Countdown Styles
 
 @media screen and (max-width: 480px) {
   .countdown-heading {
-    font-size: 2.5rem;
+    font-size: 1.4rem;
   }
 
   .countdown-para {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  .live-heading > h2 {
+    font-size: 2rem;
   }
 }

@@ -3,7 +3,6 @@ import styles from "../styles/TFinPast.module.css";
 import Slider from "react-slick";
 import LeftActive from "./svgs/LeftActive";
 import RightActive from "./svgs/RightActive";
-import tfInPastData from "../data/tfInPastData";
 import dynamic from "next/dynamic";
 
 const TfinPastCard = dynamic(() => {
@@ -66,9 +65,9 @@ const FromTheTeam = (): JSX.Element => {
       </div>
       <div className={styles["from-carousel-container"]}>
         <Slider {...settings}>
-          {tfInPastData.map((card: any) => {
+          {/* {tfInPastData.map((card: any) => {
             return <TfinPastCard key={card.id} {...card}></TfinPastCard>;
-          })}
+          })} */}
         </Slider>
       </div>
     </div>

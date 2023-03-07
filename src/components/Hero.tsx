@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import styles from "../styles/Hero.module.css";
-import NextImage from "next/image";
 import CloudLeft from "./svgs/hero/CloudLeft";
 import CloudRight from "./svgs/hero/CloudRight";
 import Layer1 from "./svgs/hero/Layer1";
@@ -17,7 +16,6 @@ import DarkCloudLeft2 from "./svgs/hero/DarkCloudLeft2";
 import DarkCloudRight1 from "./svgs/hero/DarkCloudRight1";
 import DarkCloudRight2 from "./svgs/hero/DarkCloudRight2";
 import Board from "./svgs/hero/Board";
-import HeroFooter from "./HeroFooter";
 import HeroCountDown from "./HeroCountDown";
 import { BsChevronDoubleDown } from "react-icons/bs";
 
@@ -63,14 +61,14 @@ const Hero = (): JSX.Element => {
           {greenState && (
             <div className={styles["event-theme"]}>
               <div className={styles["title"]}>
-                <div className={styles["logo"]}>
+                {/* <div className={styles["logo"]}>
                   <NextImage
                     layout="fill"
-                    src={"/favicons/tantrafiesta-logo.png"}
+                    src={"/favicon.svg"}
                     alt="TantraFiesta Logo"
                   ></NextImage>
-                </div>
-                <h2>आनंदघन</h2>
+                </div> */}
+                <img className={styles["lettering"]} src="lettering.png" alt="" />
               </div>
               <div className={styles["theme"]}>
                 <h1>वास्तुशांती सोहळा</h1>
@@ -237,7 +235,6 @@ const Hero = (): JSX.Element => {
             greenState ? styles["mobile-cont-anim"] : ""
           }`}
         ></div>
-        <div className="hero-footer">{greenState && <HeroFooter />}</div>
       </div>
     </>
   );

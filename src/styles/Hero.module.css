@@ -136,6 +136,10 @@ Theme Styles
   margin-right: 12px;
 }
 
+.title .lettering {
+  height: 3rem;
+}
+
 .theme {
   display: flex;
   justify-content: space-between;
@@ -985,6 +989,15 @@ Mobile Responsive Hero
     margin-top: 0;
   }
 
+  .theme > h1 {
+    width: 80vw;
+    font-size: 2rem !important;
+  }
+
+  .title .lettering {
+    height: 2rem;
+  }
+
   .dark-cloud-left-1 {
     top: 15%;
   }
@@ -1060,6 +1073,7 @@ Mobile Responsive Hero
 
   .mobile-board > p {
     position: relative;
+    display: none;
   }
 }
 
