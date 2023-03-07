@@ -40,7 +40,7 @@ const Home: NextPage = () => {
         ></meta>
         <meta
           property="og:image"
-          content="https://drive.google.com/file/d/1ap19gtDGkrHW3oo1PhHBDj2I0HbIWCcq/view?usp=share_link"
+          content="/favicon.svg"
         ></meta>
       </Head>
       <>
