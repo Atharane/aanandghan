@@ -34,7 +34,7 @@ Countdown Styles
 
 .live-heading > h2 {
   font-size: 3rem;
-  color: #f1a90f;
+  color: rgba(46, 165, 25, 0.6);
 }
 
 .live-heading > p {

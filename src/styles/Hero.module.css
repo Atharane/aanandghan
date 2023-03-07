@@ -149,7 +149,7 @@ Theme Styles
   animation: themeHeadingAnim 1s ease-out 3s 1 forwards;
 }
 
-.theme h1 {
+.theme h1 { 
   font-size: 4rem;
   color: #419041;
   font-weight: 900;
@@ -991,7 +991,7 @@ Mobile Responsive Hero
 
   .theme > h1 {
     width: 80vw;
-    font-size: 2rem !important;
+    font-size: 2.6rem !important;
   }
 
   .title .lettering {
