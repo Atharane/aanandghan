@@ -149,7 +149,7 @@ digital-tree.theme {
   animation: themeHeadingAnim 1s ease-out 3s 1 forwards;
 }
 
-.theme h1 { 
+.theme h1 {
   font-size: 4rem;
   color: #419041;
   font-weight: 900;
@@ -477,13 +477,12 @@ Digital Tree styles
   overflow: visible;
 }
 
-
 .digital-tree > svg > path {
   stroke: url(#digital-tree_svg__a);
   stroke-width: 4px;
 }
 
-.dry-tree > path{
+.dry-tree > path {
   fill: #581601;
 }
 
@@ -496,8 +495,8 @@ Digital Tree styles
 }
 
 .digital-tree-anim > svg > path {
-  animation:     treeMoveDownUp 1.5s ease-in-out 0s 1, hiddenForTwoSeconds 2s ease-in-out 0s 1;
-
+  animation: treeMoveDownUp 1.5s ease-in-out 0s 1,
+    hiddenForTwoSeconds 2s ease-in-out 0s 1;
 }
 
 /* stay invisible for first two seconds */
@@ -512,7 +511,6 @@ Digital Tree styles
     opacity: 1;
   }
 }
-
 
 @keyframes treeMoveDownUp {
   0% {

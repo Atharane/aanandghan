@@ -7,7 +7,6 @@ interface Props {
     {
       id: number;
       title: string;
-      date: Date;
       start?: Date;
       end?: Date;
     }
@@ -15,7 +14,6 @@ interface Props {
 }
 
 const EventTimeline = ({ timeline }: Props): JSX.Element => {
-  const currentDate = new Date();
 
   return (
     <div
@@ -32,15 +30,11 @@ const EventTimeline = ({ timeline }: Props): JSX.Element => {
             {timeline.map((item) => {
               return (
                 <div
-                  className={
-                    currentDate > new Date(item.date)
-                      ? `${styles["card"]} ${styles["over"]}`
-                      : styles["card"]
-                  }
+                  className={styles["card"]}
                   key={item.id}
                 >
                   <h3>{item.title}</h3>
-                  <p>{format(new Date(item.date), "do MMMM yyyy")}</p>
+                  {/* <p>{format(new Date(item.date), "do MMMM yyyy")}</p> */}
                 </div>
               );
             })}

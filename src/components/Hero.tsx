@@ -62,13 +62,6 @@ const Hero = (): JSX.Element => {
           {greenState && (
             <div className={styles["event-theme"]}>
               <div className={styles["title"]}>
-                {/* <div className={styles["logo"]}>
-                  <NextImage
-                    layout="fill"
-                    src={"/favicon.svg"}
-                    alt="TantraFiesta Logo"
-                  ></NextImage>
-                </div> */}
                 <img
                   className={styles["lettering"]}
                   src="lettering.png"

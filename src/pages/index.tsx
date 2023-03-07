@@ -32,11 +32,11 @@ const Home: NextPage = () => {
         <meta property="og:title" content="आनंदघन वास्तुशांती सोहळा" />
         <meta
           property="og:description"
-          content="Tantrafiesta is the annual science and technology festival of the Indian Institute of Information Technology, Nagpur. "
+          content="आनंदघन वास्तुशांती सोहळा - २८ मार्च, २०२३"
         ></meta>
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/doraexp69/image/upload/v1663765902/tf2022/tantrafiesta-logo.png"
+          content="favicon.svg"
         ></meta>
       </Head>
       <>
