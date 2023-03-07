@@ -19,6 +19,10 @@ const VenueAndForm = dynamic(() => {
   return import("../components/VenueAndForm");
 });
 
+const EventTimeline = dynamic(() => {
+  return import("../components/EventTimeline");
+});
+
 const Home: NextPage = () => {
   return (
     <div>
@@ -36,14 +40,15 @@ const Home: NextPage = () => {
         ></meta>
         <meta
           property="og:image"
-          content="favicon.svg"
+          content="https://drive.google.com/file/d/1ap19gtDGkrHW3oo1PhHBDj2I0HbIWCcq/view?usp=share_link"
         ></meta>
       </Head>
       <>
         <Hero />
         <BgWrapper>
           <AboutTantra />
-          <TFinPast />
+          <EventTimeline />
+          {/* <TFinPast /> */}
           <VenueAndForm></VenueAndForm>
         </BgWrapper>
       </>

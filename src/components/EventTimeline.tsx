@@ -1,19 +1,25 @@
 import React from "react";
-import { format } from "date-fns";
-import styles from "../../styles/event/EventTimeline.module.css";
+import styles from "../styles/event/EventTimeline.module.css";
 
-interface Props {
-  timeline: [
-    {
-      id: number;
-      title: string;
-      start?: Date;
-      end?: Date;
-    }
-  ];
-}
+const timeline = [
+  {
+    id: 1,
+    title: "गृहप्रवेश",
+    start: "सकाळी ..... ते ......",
+  },
+  {
+    id: 2,
+    title: "वास्तुशांती",
+    start: "सकाळी ..... ते ......",
+  },
+  {
+    id: 2,
+    title: "भोजन सोहळा",
+    start: " ....... पासून",
+  },
+];
 
-const EventTimeline = ({ timeline }: Props): JSX.Element => {
+const EventTimeline = (): JSX.Element => {
 
   return (
     <div
@@ -22,19 +28,16 @@ const EventTimeline = ({ timeline }: Props): JSX.Element => {
       id="timeline"
       className={styles["container"]}
     >
-      <h2 className={styles["heading"]}>Timeline</h2>
+      <h2 className={styles["heading"]}>टाइमलाइन</h2>
       <div className={styles["underline"]} />
       <div className={styles["content"]}>
         <div className={styles["timeline"]}>
           <div className={styles["cards"]}>
             {timeline.map((item) => {
               return (
-                <div
-                  className={styles["card"]}
-                  key={item.id}
-                >
+                <div className={styles["card"]} key={item.id}>
                   <h3>{item.title}</h3>
-                  {/* <p>{format(new Date(item.date), "do MMMM yyyy")}</p> */}
+                  <p>{item.start}</p>
                 </div>
               );
             })}

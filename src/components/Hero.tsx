@@ -87,9 +87,9 @@ const Hero = (): JSX.Element => {
             <p>
               {" "}
               <span>
-                A{" "}
-                <span className={styles["green-title"]}>Greener Tomorrow</span>{" "}
-                awaits you ...
+                काहीतरी {" "}
+                <span className={styles["green-title"]}>नवीन</span> करण्याची
+                सुरुवात
               </span>
               <span className={styles["thic"]}>Click the tree below</span>
               <span role="img" className={styles["down-arrow"]}>

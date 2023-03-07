@@ -38,7 +38,6 @@
 
 .campus-image{
   position: relative;
-  grid-area: 2/1/span 1/ span 1;
   border-radius: 10px;
   overflow: hidden;
   min-height: 400px;
