@@ -11,6 +11,7 @@ import TreeLeft from "./svgs/hero/TreeLeft";
 import TreeRight from "./svgs/hero/TreeRight";
 import Sun from "./svgs/hero/Sun";
 import DigitalTree from "./svgs/hero/DigitalTree";
+import MangoTree from "./svgs/hero/MangoTree";
 import DarkCloudLeft1 from "./svgs/hero/DarkCloudLeft1";
 import DarkCloudLeft2 from "./svgs/hero/DarkCloudLeft2";
 import DarkCloudRight1 from "./svgs/hero/DarkCloudRight1";
@@ -68,7 +69,11 @@ const Hero = (): JSX.Element => {
                     alt="TantraFiesta Logo"
                   ></NextImage>
                 </div> */}
-                <img className={styles["lettering"]} src="lettering.png" alt="" />
+                <img
+                  className={styles["lettering"]}
+                  src="lettering.png"
+                  alt=""
+                />
               </div>
               <div className={styles["theme"]}>
                 <h1>वास्तुशांती सोहळा</h1>
@@ -226,7 +231,13 @@ const Hero = (): JSX.Element => {
                 greenState ? styles["digital-tree-anim"] : ""
               }`}
             >
-              <DigitalTree></DigitalTree>
+              {greenState ? (
+                <MangoTree></MangoTree>
+              ) : (
+                <DigitalTree className={`${styles["dry-tree"]} `}></DigitalTree>
+              )}
+              {/* <MangoTree></MangoTree> */}
+              {/* <DigitalTree className={`${styles["dry-tree"]} `}></DigitalTree> */}
             </div>
           </div>
         </div>

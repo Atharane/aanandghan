@@ -140,7 +140,7 @@ Theme Styles
   height: 3rem;
 }
 
-.theme {
+digital-tree.theme {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
@@ -477,10 +477,14 @@ Digital Tree styles
   overflow: visible;
 }
 
+
 .digital-tree > svg > path {
-  fill: #581601;
   stroke: url(#digital-tree_svg__a);
   stroke-width: 4px;
+}
+
+.dry-tree > path{
+  fill: #581601;
 }
 
 .digital-tree-anim {
@@ -492,9 +496,23 @@ Digital Tree styles
 }
 
 .digital-tree-anim > svg > path {
-  animation: digitalTreeAnim1 0.5s ease 0.8s 1 forwards,
-    treeMoveDownUp 1.5s ease-in-out 0s 1;
+  animation:     treeMoveDownUp 1.5s ease-in-out 0s 1, hiddenForTwoSeconds 2s ease-in-out 0s 1;
+
 }
+
+/* stay invisible for first two seconds */
+@keyframes hiddenForTwoSeconds {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 @keyframes treeMoveDownUp {
   0% {
